@@ -1,0 +1,134 @@
+/* Загальний стиль для головного меню */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #00BFFF; /* Яскраво блакитний колір */
+  padding: 20px 0;
+  color: white;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-content .blog-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.header-content .author-name {
+  font-size: 18px;
+  color: white;
+  margin-left: 10px;
+}
+
+.header-content .buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.header-content .buttons a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+}
+
+.header-content .buttons a:hover {
+  color: #555555;
+}
+
+.header-line {
+  margin-top: 0;
+  border-top: 2px solid red;
+  width: 100%;
+}
+
+/* Блок заголовка "Реєстрація користувача" */
+.registration-title {
+  background-color: #00BFFF; /* Блакитний фон */
+  color: white; /* Білий колір тексту */
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  margin: 40px auto auto auto; /* Центруємо блок */
+  max-width: 450px; /* Така ж ширина, як у форми */
+  box-sizing: border-box; /* Враховуємо padding при визначенні ширини */
+  border-radius: 5px 5px 0 0; /* Округлені верхні кути */
+}
+
+/* Стилі для бланку реєстрації */
+.registration-form {
+  background-color: white;
+  max-width: 450px;
+  margin: 0 auto; /* Центруємо форму */
+  padding: 30px;
+  border-radius: 5px;
+  border: 2px solid #ccc; /* Товстіший контур для блоку */
+  box-sizing: border-box; /* Враховуємо padding при визначенні ширини */
+}
+
+.registration-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.registration-form input,
+.registration-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.registration-form button {
+    width: 200px; /* Зменшена ширина кнопки */
+    padding: 10px 0; /* Відступи лише зверху та знизу */
+    background-color: #dadada; /* Світло-сірий колір кнопки */
+    border: none;
+    color: #555555; /* Колір тексту на кнопці */
+    font-size: 16px;
+    margin-left: auto; /* Розміщення кнопки праворуч */
+    display: block;
+  }
+  
+
+.registration-form button:hover {
+  background-color: #f0f0f0; /* Зміна кольору на кнопці при наведенні */
+}
+
+/* Додавання відступу між заголовком і полями */
+.registration-form label:first-of-type {
+  margin-top: 20px; /* Відступ після блакитного прямокутника */
+}
+
+/* Сірий блок з текстом внизу */
+footer {
+  background-color: #333333; /* Темно-сірий колір фону */
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content p {
+  color: white; /* Білий текст */
+  font-size: 14px;
+  margin: 0;
+}
