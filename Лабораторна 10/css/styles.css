@@ -1,0 +1,140 @@
+/* Задаємо базові стилі для body */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+}
+
+/* Вся сторінка обернена у wrapper */
+.wrapper {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  gap: 3px; /* Проміжок між блоками */
+  grid-template-columns: 1.5fr 1fr 1.5fr 1fr; /* Ширина колонок */
+  grid-template-rows: 1.5fr 1fr 1fr 1fr; /* Висота рядків */
+  grid-template-areas: 
+    "blue blue blue gray"
+    "cyan red yellow gray"
+    "green green yellow gray"
+    "orange orange orange orange";
+}
+
+/* Загальні стилі для блоків */
+.box {
+  border: 1px solid #ddd; /* Рамка */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Індивідуальні кольори для кожного блоку */
+.blue {
+  background-color: #6495ED;
+  grid-area: blue;
+}
+
+.cyan {
+  background-color: #40E0D0;
+  grid-area: cyan;
+}
+
+.red {
+  background-color: #F08080;
+  grid-area: red;
+}
+
+.yellow {
+  background-color: #FFD700;
+  grid-area: yellow;
+}
+
+.green {
+  background-color: #3CB371;
+  grid-area: green;
+}
+
+.gray {
+  background-color: #708090;
+  grid-area: gray;
+}
+
+.orange {
+  background-color: #D2691E;
+  grid-area: orange;
+}
+
+@media (max-width: 499px) {
+  .wrapper {
+    grid-template-areas: 
+      "blue"
+      "gray"
+      "cyan"
+      "red"
+      "yellow"
+      "green"
+      "orange";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr) ;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 749px) {
+  .wrapper {
+    grid-template-areas: 
+      "blue blue"
+      "cyan red"
+      "yellow green"
+      "gray orange";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+
+/* Адаптація для екранів від 750px до 949px */
+@media (min-width: 750px) and (max-width: 949px) {
+  .wrapper {
+    grid-template-columns: 1.5fr 1fr; /* Дві колонки, перша ширша */
+    grid-template-rows: repeat(4, 1fr); /* Чотири рівних рядки */
+    grid-template-areas:
+      "blue gray"
+      "cyan red"
+      "green yellow"
+      "orange orange";
+  }
+}
+
+/* Адаптація для екранів від 950px до 1199px */
+@media (min-width: 950px) and (max-width: 1199px) {
+  .wrapper {
+    grid-template-columns: 1.5fr 1fr 1fr; /* Три колонки */
+    grid-template-rows: repeat(3, 1fr); /* Три рівних рядки */
+    grid-template-areas:
+      "blue blue gray"
+      "cyan red yellow"
+      "green green orange";
+  }
+}
+
+/* Адаптація для екранів ≥1200px */
+@media (min-width: 1200px) {
+  .wrapper {
+    grid-template-columns: 1.5fr 1fr 1.5fr 1fr; /* Чотири колонки */
+    grid-template-rows: 1.5fr 1fr 1fr 1fr; /* Чотири рівних рядки */
+    grid-template-areas: 
+      "blue blue blue gray"
+      "cyan red yellow gray"
+      "green green yellow gray"
+      "orange orange orange orange";
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення</title>
+</head>
+<body>
+    <header>
+        <h1>Зробити замовлення</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Головна</a></li>
+                <li><a href="/menu">Меню</a></li>
+                <li><a href="/about">Про ресторан</a></li>
+                <li><a href="/order">Зробити замовлення</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Форма для замовлення</h2>
+        <form action="/submit-order" method="POST">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="order">Виберіть страву:</label>
+            <select id="order" name="order" required>
+                <option value="pizza">Піца Маргарита</option>
+                <option value="salad">Салат Цезар</option>
+                <option value="soup">Борщ</option>
+                <option value="wings">Курячі крильця</option>
+            </select><br><br>
+
+            <button type="submit">Замовити</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ресторан</p>
+    </footer>
+</body>
+</html>
+
