@@ -83,7 +83,14 @@ code {
 
 .header-lightgreen {
   font-size: 24px;
-  color: #5cd25c;
+  color: #69cf4a;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.header-darkgreen {
+  font-size: 24px;
+  color: #649a1a;
   margin-bottom: 10px;
   white-space: nowrap;
 }
