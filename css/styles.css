@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background-color: #00BFFF; /* Яскраво блакитний колір */
+  background-color: #00BFFF;
   padding: 20px 0;
   color: white;
   width: 100%;
@@ -32,6 +32,10 @@ header {
   margin-right: 20px;
 }
 
+.header-content .buttons a:hover {
+  color: #555555;
+}
+
 .header-line {
   border-top: 2px solid red;
   width: 100%;
@@ -39,26 +43,27 @@ header {
 
 .content {
   display: flex;
-  gap: 20px;
-  padding: 0 100px;
+  gap: 70px;
+  padding: 20px 100px;
 }
 
 .column {
   flex: 1;
   max-width: 250px;
+  margin-bottom: 20px;
 }
 
 .header-lightblue {
   font-size: 24px;
-  color: #72cfee; /* Світло-блакитний */
+  color: #72cfee;
   margin-bottom: 10px;
 }
 
 .header-darkblue {
   font-size: 24px;
-  color: #2c677b; /* Темно-блакитний */
+  color: #2c677b;
   margin-bottom: 10px;
-  white-space: nowrap; /* Текст не переноситься на наступний рядок */
+  white-space: nowrap;
 }
 
 .description {
@@ -74,4 +79,11 @@ code {
   font-weight: bold;
   color: #333;
   padding: 5px 0;
+}
+
+.header-lightgreen {
+  font-size: 24px;
+  color: #5cd25c;
+  margin-bottom: 10px;
+  white-space: nowrap;
 }
