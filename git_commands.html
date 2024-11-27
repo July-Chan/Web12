@@ -25,12 +25,31 @@
 
   <div class="content">
     <div class="column">
-      <h2>Create a Repository</h2>
-      <p class="description">From scratch -- Create a new local repository</p>
-      <code>$ git init [project name]</code>
-      <p class="description">Download from an existing repository</p>
-    <code>$ git clone my_url</code>
-    </div>
+        <h2 class="header-lightblue">Create a Repository</h2>
+        <p class="description">From scratch -- Create a new local repository</p>
+        <code>$ git init [project name]</code>
+        <p class="description">Download from an existing repository</p>
+        <code>$ git clone my_url</code>
+      
+        <h2 class="header-darkblue no-wrap">Observe your Repository</h2>
+        <p class="description">List new or modified files not yet committed</p>
+        <code>$ git status</code>
+        <p class="description">Show the changes to staged files</p>
+        <code>$ git diff --cached</code>
+        <p class="description">Show all staged and unstaged file changes</p>
+        <code>$ git diff HEAD</code>
+        <p class="description">Show the changes between two commit ids</p>
+        <code>$ git diff commit1 commit2</code> 
+        <p class="description">List the change dates and authors for a file</p>  
+        <code>$ git blame [file]</code> 
+        <p class="description">Show the file changes for a commit id and/or file</p>  
+        <code>$ git show [commit]: [file]</code> 
+        <p class="description">Show full change history</p>  
+        <code>$ git log</code> 
+        <p class="description">Show change history for file/directory including diffs</p>  
+        <code>$ git log -p [file/directory]</code> 
+      </div>
+      
   </div>
 
 </body>
