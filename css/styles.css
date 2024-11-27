@@ -113,3 +113,21 @@ a {
   text-decoration: none;
   color: #1E90FF;
 }
+
+footer {
+  background-color: #333333;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content p {
+  color: white;
+  font-size: 12px;
+  margin: 0;
+}
