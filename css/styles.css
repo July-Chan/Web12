@@ -94,3 +94,22 @@ code {
   margin-bottom: 10px;
   white-space: nowrap;
 }
+
+.header-orange {
+  font-size: 24px;
+  color: #ff8c00;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+.header-orange-dark {
+  font-size: 24px;
+  color: #c25e0b;
+  margin-bottom: 10px;
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none;
+  color: #1E90FF;
+}
